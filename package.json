@@ -1,0 +1,18 @@
+{
+  "name": "group-same-files",
+  "version": "0.0.1",
+  "description": "Find groups of same files in defined folder and subfolders",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vlad Golubev",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "coffee-script": "^1.8.0",
+    "crypto": "0.0.3",
+    "underscore": "^1.7.0",
+    "walk": "^2.3.9"
+  }
+}
