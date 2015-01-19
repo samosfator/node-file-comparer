@@ -28,15 +28,14 @@ module.exports = class FileReader
     asyncTasks = []
     _.each allFilesPaths, (filePath) ->
       asyncTasks.push (callback) ->
-        getFileData filePath, (data) ->
-          addFileToGroup(checksum(data), filePath)
+        getFileData filePath, (err, data) ->
+          addFileToGroup(checksum(data), filePath) if not err
           callback()
     asyncTasks
 
   getFileData = (filePath, dataReadCallback) ->
     fs.readFile filePath, (err, data) ->
-      return if err
-      dataReadCallback data
+      dataReadCallback err, data
 
   addFileToGroup = (fileChecksum, filePath) ->
     if not sameFilesGroups[fileChecksum]?
