@@ -7,3 +7,7 @@ This node app takes folder path as an argument and prints out groups of same fil
 ```batch
 comparer.exe E:\folder
 ```
+### Average perfomance
+| Files | Subfolders | Total size | Time (ms) |
+|:-----:|:----------:|:----------:|:---------:|
+| 3232  |    768     |    456 MB  |   14193   |
