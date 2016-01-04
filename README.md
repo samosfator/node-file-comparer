@@ -1,3 +1,7 @@
+###### Disclaimer
+This repository contains a second test task given in order to apply for a job in [JSSolutions](https://github.com/JSSolutions). The first one is located [here](https://github.com/vladgolubev/discovervenues).
+
+
 Compare and group same files
 ============================
 
